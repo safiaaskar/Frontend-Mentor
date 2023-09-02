@@ -1,0 +1,368 @@
+/* Global Rules */
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%)
+}
+
+* {
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 376px) {
+    .container {
+        width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Header */
+.header {
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: cover;
+    height: 520px;
+}
+
+@media (max-width: 376px) {
+    .header {
+        background-image: url(../images/bg-header-mobile.png);
+        height: 650px;
+    }
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .icon {
+    text-align: center;
+    padding-top: 80px
+}
+
+.header .container .text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 570px;
+    max-width: 100%;
+}
+
+@media (max-width:414px) {
+    .header .container .text {
+        top: 45%;
+        font-size: 1rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 0;
+}
+
+.container p {
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+}
+
+.header .container .buttons {
+    position: absolute;
+    top: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 376px) {
+    .header .container .buttons {
+        bottom: 120px;
+        left: 38px;
+        display: block;
+    }
+}
+
+.iOS,
+.Mac {
+    padding: 15px;
+    border-radius: 25px;
+    width: 190px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+
+    .iOS,
+    .Mac {
+        margin: 8px;
+        width: 280px;
+    }
+}
+
+.iOS {
+    background-color: var(--Strong-Cyan);
+    border-color: var(--Strong-Cyan);
+
+}
+
+.Mac {
+    background-color: var(--Light-Blue);
+    border-color: var(--Light-Blue);
+}
+
+.iOS,
+.Mac,
+footer .svg,
+a:hover {
+    cursor: grab;
+}
+
+/* Keep */
+.keep {
+    padding-bottom: 60px;
+}
+
+.keep h2,
+.access h2,
+.Superchare h2,
+.Download h2,
+.keep p,
+.access p,
+.Superchare p,
+.Download p,
+.Superchare .icons,
+.Superchare .info {
+    text-align: center;
+}
+
+
+.keep .container .keep-contect {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 376px) {
+    .keep .container .keep-contect {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.keep .container .keep-contect .image-keep {
+    position: relative;
+    height: 480px;
+    width: 620px;
+    left: -200px;
+}
+
+@media (max-width: 912px) {
+    .keep .container .keep-contect .image-keep {
+        position: static;
+        height: 270px;
+        width: 325px;
+        align-items: center;
+    }
+}
+
+.keep .container .keep-contect .image-keep img {
+    max-width: 100%;
+}
+
+.keep .container .keep-contect .keep-text {
+    flex-basis: calc(100% - 650px);
+    padding-top: 55px;
+}
+
+.keep .container .keep-contect .keep-text p {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+
+    .keep .container .keep-contect .keep-text,
+    .keep .container .keep-contect .keep-text p {
+        padding-top: 0px;
+        text-align: center;
+    }
+}
+
+
+.keep .keep-contect .keep-text .information {
+    width: 315px;
+}
+
+/* Access */
+.access .access-content {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.access .access-image {
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.access .access-image img {
+    width: 100%;
+}
+
+/* Superchare */
+.Superchare .Sup-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 80px;
+    margin-top: 100px;
+    justify-items: center;
+}
+
+.Superchare .Super-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+    justify-items: center;
+}
+
+/* Download */
+.Download {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Download .container p {
+    padding-bottom: 20px;
+}
+
+.Download .container .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+
+    .Download .buttons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f6f6f6;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+    footer .container {
+        flex-direction: column;
+        padding: 35px;
+        text-align: center;
+    }
+}
+
+footer .copy {
+    font-size: 60px;
+    color: var(--Strong-Cyan);
+}
+
+footer nav {
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+
+@media (max-width: 600px) {
+    footer ul {
+        padding-left: 0px;
+        justify-content: center;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    display: block;
+    font-size: 14px;
+    padding: 5px 30px;
+    width: 180px;
+}
+
+@media (max-width: 600px) {
+    footer ul {
+        padding: 15px 0;
+    }
+}
+
+footer a:hover {
+    color: var(--Strong-Cyan);
+}
+
+footer .icons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+}
+
+footer svg {
+    margin-left: 10px;
+}
+
+footer .svg:hover {
+    color: var(--Strong-Cyan);
+}
