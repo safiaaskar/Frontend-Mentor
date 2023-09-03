@@ -97,7 +97,7 @@ h1,
 h2,
 h3 {
     color: var(--Dark-Grayish-Blue);
-    margin-bottom: 0;
+    margin: 15px 0;
 }
 
 .container p {
