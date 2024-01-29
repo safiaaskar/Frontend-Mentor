@@ -1,5 +1,5 @@
 # Frontend Mentor - Clipboard landing page
-https://safiaaskar.github.io/Frontend-Mentor/
+https://clipboard-landing-page-master-1.netlify.app/
 
 ![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
 
